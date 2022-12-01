@@ -1,0 +1,108 @@
+{
+  "ssh_public_key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM4Hm8ZgmBIduPkPjNMijB6KMCYENnJD7W9piKzjxZxa root@esxi-hetzner.lab.local",
+  "image_type": "full-iso",
+  "static_network_config": [
+    {
+      "network_yaml": "",
+      "mac_interface_map": [
+        {
+          "mac_address": "aa:bb:cc:11:42:10",
+          "logical_nic_name": "ens3"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:c0",
+          "logical_nic_name": "ens4"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:d0",
+          "logical_nic_name": "ens5"
+        }
+      ]
+    },
+    {
+      "network_yaml": "",
+      "mac_interface_map": [
+        {
+          "mac_address": "aa:bb:cc:11:42:11",
+          "logical_nic_name": "ens3"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:c1",
+          "logical_nic_name": "ens4"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:d1",
+          "logical_nic_name": "ens5"
+        }
+      ]
+    },
+    {
+      "network_yaml": "",
+      "mac_interface_map": [
+        {
+          "mac_address": "aa:bb:cc:11:42:12",
+          "logical_nic_name": "ens3"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:c2",
+          "logical_nic_name": "ens4"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:d2",
+          "logical_nic_name": "ens5"
+        }
+      ]
+    },
+    {
+      "network_yaml": "",
+      "mac_interface_map": [
+        {
+          "mac_address": "aa:bb:cc:11:42:20",
+          "logical_nic_name": "ens3"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:50",
+          "logical_nic_name": "ens4"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:60",
+          "logical_nic_name": "ens5"
+        }
+      ]
+    },
+    {
+      "network_yaml": "",
+      "mac_interface_map": [
+        {
+          "mac_address": "aa:bb:cc:11:42:21",
+          "logical_nic_name": "ens3"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:51",
+          "logical_nic_name": "ens4"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:61",
+          "logical_nic_name": "ens5"
+        }
+      ]
+    },
+    {
+      "network_yaml": "",
+      "mac_interface_map": [
+        {
+          "mac_address": "aa:bb:cc:11:42:22",
+          "logical_nic_name": "ens3"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:52",
+          "logical_nic_name": "ens4"
+        },
+        {
+          "mac_address": "aa:bb:cc:11:42:62",
+          "logical_nic_name": "ens5"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+dns-resolver:
+  config:
+    server:
+    - 10.17.3.1
+interfaces:
+- name: team0 
+  description: Team 
+  type: team
+  state: up
+  mtu: 1400 
+  ipv4: 
+    address:
+    - ip: 10.17.3.102
+      prefix-length: 24
+    enabled: true
+  team:
+    port: 
+      - name: ens3
+      - name: ens4
+      - name: ens5
+    runner:
+      name: loadbalance
+- name: ens3
+  state: up
+  type: ethernet
+- name: ens4
+  state: up
+  type: ethernet
+- name: ens5
+  state: up
+  type: ethernet
+routes:
+  config:
+  - destination: 0.0.0.0/0
+    next-hop-address: 10.17.3.1
+    next-hop-interface: team0
+    table-id: 254

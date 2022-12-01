@@ -1,0 +1,40 @@
+dns-resolver:
+  config:
+    server:
+    - 192.167.124.1
+interfaces:
+- name: team0 
+  description: Team 
+  type: team
+  state: up 
+  ipv4: 
+    address:
+    - ip: 192.167.124.23
+      prefix-length: 24
+    enabled: true
+  team:
+    ports: 
+      - ens3
+      - ens4
+    runner:
+      name: loadbalance
+- name: ens3
+  state: up
+  type: ethernet
+- name: ens4
+  state: up
+  type: ethernet
+- name: ens5
+  state: up
+  type: ethernet
+  ipv4:
+    address:
+    - ip: 10.17.3.4
+      prefix-length: 24
+    enabled: true
+routes:
+  config:
+  - destination: 0.0.0.0/0
+    next-hop-address: 192.167.124.1
+    next-hop-interface: bond0
+    table-id: 254
